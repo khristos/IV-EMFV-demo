@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Illustrated Verdict | Electronic Fetal Monitoring Viewer</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+  </head>
+  <body class="efmv">
+
+    <div class="section">
+      <div class="container">
+        <div class="efm__player" role="region" aria-label="efm player">
+          <div class="efm__media">
+            <div class="efm__media-collection">
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_1.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_2.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_3.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_4.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_5.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_6.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_7.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_8.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_9.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_10.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_11.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_12.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_13.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_14.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_15.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_16.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_17.jpg" alt=""></div></div>
+              <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_18.jpg" alt=""></div></div>
+            </div> <!-- /.efm__media-collection -->
+          </div> <!-- /.efm__media -->
+
+          <div class="efm__controls" role="toolbar" aria-label="efm player">
+            <form class="efm__timeline columns is-centered">
+              <fieldset class="column is-8">
+                <input type="range" class="efm__seek-bar" list="tick-values" min="0" max="100" value="0" step=".1" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0">
+                <output for="efm__seek-bar" class="efm__seek-time">0</output>
+                <datalist id="tick-values">
+                  <option value="10" label="Low"></option>
+                  <option value="90" label="High"></option>
+                </datalist>
+                <span class="efm__timer-current">0</span> / <span class="efm__timer-total">0</span>
+              </fieldset>
+            </form>
+
+            <div class="efm__toolbar">
+              <form class="columns">
+                <fieldset class="efm__group column is-4 is-offset-4">
+                  <button class="efm__previous"><i class="mdi mdi-skip-previous"></i></button>
+                  <button class="efm__play-pause"><i class="mdi mdi-play"></i></button>
+                  <button class="efm__next"><i class="mdi mdi-skip-next"></i></button>
+
+                  <label for="efm__play-speed"></label>
+                  <div class="select">
+                    <select class="efm__play-speed" id="">
+                      <option value="0.5">1x</option>
+                      <option value="1" selected>25x</option>
+                      <option value="45">100x</option>
+                      <option value="100">500x</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset class="efm__group column is-4">
+                  <button class="efm__menu"><i class="mdi mdi-format-list-bulleted"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </div> <!-- /.efm__controls -->
+        </div> <!-- /.efm__player -->
+      </div> <!-- /.container -->
+    </div> <!-- /.section -->
+
+    <footer class="efm__footer section" role="contentinfo">
+      <div class="level container">
+        <header class="level-left">
+          <h1 class="title is-5">EFMV <span>v3.0</span></h1>
+        </header>
+        <figure class="iv__logo level-right">
+          <a href="/" title="Go to Illustrated Verdict Home Page">
+            <img src="./assets/images/IVLogo.png" alt="Illustrated Verdict logo" />
+          </a>
+        </figure>
+      </div> <!-- /.level -->
+    </footer> <!-- /.page__footer -->
+
+    <script type="text/javascript" src="assets/js/anime.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
