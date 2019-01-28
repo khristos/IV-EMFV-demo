@@ -24778,26 +24778,26 @@ label, button {
 /*-------------*/
 .efm__media {
   overflow-x: hidden;
-}
-
-.efm__media img {
-  max-width: none;
+  overflow-x: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
 }
 
 .efm__media::-webkit-scrollbar {
   display: none;
 }
 
-.efm__media-collection {
-  display: flex;
+.efm__media img {
+  max-width: none;
 }
 
+/*
+.efm__media-item{
+  flex: 0 0 auto; //sizes the item according to declared width/height properties, i.e. dimensions behave normally and not through flexbox
+}
+*/
 .efm__media-item {
   display: inline-block;
-}
-
-.efm__media-item .player__content {
-  display: block;
 }
 
 .efm__controls {
