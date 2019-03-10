@@ -14,7 +14,7 @@
       <div class="container">
         <div class="efm__player" role="region" aria-label="efm player">
           <div class="efm__media">
-            <div class="efm__media-collection draggable-x">
+            <div class="efm__media-collection">
               <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_1.jpg" alt=""></div></div>
               <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_2.jpg" alt=""></div></div>
               <div class="efm__media-item"><div class="efm__content"><img src="content/strip/4547fs_3.jpg" alt=""></div></div>
@@ -45,13 +45,15 @@
                   <option value="10" label="Low"></option>
                   <option value="90" label="High"></option>
                 </datalist>
-                <span class="efm__timer-current">0</span> / <span class="efm__timer-total">0</span>
+                <!--<span class="efm__timer-current">0</span> / <span class="efm__timer-total">0</span>-->
+                <span class="efm__timer-current">0</span>
               </fieldset>
             </form>
 
             <div class="efm__toolbar">
               <form class="columns">
-                <fieldset class="efm__group column is-4 is-offset-4">
+                <!--<fieldset class="efm__group column is-4 is-offset-4">-->
+                <fieldset class="efm__group column is-full">
                   <button class="efm__previous"><i class="mdi mdi-skip-previous"></i></button>
                   <button class="efm__play-pause"><i class="mdi mdi-play"></i></button>
                   <button class="efm__next"><i class="mdi mdi-skip-next"></i></button>
@@ -66,9 +68,9 @@
                     </select>
                   </div>
                 </fieldset>
-                <fieldset class="efm__group column is-4">
+                <!--<fieldset class="efm__group column is-4">
                   <button class="efm__menu"><i class="mdi mdi-format-list-bulleted"></i></button>
-                </fieldset>
+                </fieldset>-->
               </form>
             </div>
           </div> <!-- /.efm__controls -->
@@ -89,17 +91,11 @@
       </div> <!-- /.level -->
     </footer> <!-- /.page__footer -->
 
+    <!-- Dependencies -->
     <script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/anime.min.js"></script>
-    <!--<script type="text/javascript" src="assets/js/interact.min.js"></script>-->
-    <!-- Dependencies. -->
-    <script src="assets/js/tinyemitter.min.js"></script>
-    <script src="assets/js/odo-device.min.js"></script>
-    <script src="assets/js/odo-helpers.min.js"></script>
-    <script src="assets/js/odo-pointer.min.js"></script>
 
-    <!-- Minified Source. -->
-    <script src="assets/js/odo-draggable.min.js"></script>
+    <!-- Minified Source -->
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

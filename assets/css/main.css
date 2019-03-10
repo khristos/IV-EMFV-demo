@@ -24778,8 +24778,7 @@ label, button {
 /*-------------*/
 .efm__media {
   overflow-x: hidden;
-  overflow-x: scroll;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -24791,8 +24790,12 @@ label, button {
   max-width: none;
 }
 
+.efm__media-collection {
+  display: flex;
+}
+
 /*
-.efm__media-item{
+.efm__media-item {
   flex: 0 0 auto; //sizes the item according to declared width/height properties, i.e. dimensions behave normally and not through flexbox
 }
 */
