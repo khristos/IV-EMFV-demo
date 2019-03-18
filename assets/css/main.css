@@ -24792,13 +24792,18 @@ label, button {
 
 .efm__media-collection {
   display: flex;
+  flex-wrap: nowrap;
 }
 
-/*
-.efm__media-item {
-  flex: 0 0 auto; //sizes the item according to declared width/height properties, i.e. dimensions behave normally and not through flexbox
+.efm__media-collection::-webkit-scrollbar {
+  display: none;
 }
-*/
+
+.efm__media-item {
+  flex: 0 0 auto;
+  /* sizes the item according to declared width/height properties, i.e. dimensions behave normally and not through flexbox */
+}
+
 .efm__media-item {
   display: inline-block;
 }
