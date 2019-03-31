@@ -24777,7 +24777,7 @@ label, button {
 /*  COMPONENT  */
 /*-------------*/
 .efm__media {
-  overflow-x: hidden;
+  overflow-x: auto;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
@@ -24801,11 +24801,6 @@ label, button {
 
 .efm__media-item {
   flex: 0 0 auto;
-  /* sizes the item according to declared width/height properties, i.e. dimensions behave normally and not through flexbox */
-}
-
-.efm__media-item {
-  display: inline-block;
 }
 
 .efm__controls {
